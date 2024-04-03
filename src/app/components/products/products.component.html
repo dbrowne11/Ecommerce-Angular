@@ -1,0 +1,18 @@
+
+<h2 class="text-center">All Products</h2>
+
+<div class="row text-center">
+    <div class="col-sm-3 my-2 card-group " *ngFor="let product of (products | orderBy:ascending); trackBy: trackProduct">
+        <div class="card h-100 ">
+            <img [src]="product.productImage" alt="image not found" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.productName | titlecase}}</h5>
+                <h5 class="card-body ">{{ product.price | currency}}</h5>
+                <div class="text-center">
+                    <button class="btn-primary btn-block btn" (click)="onClickHandler(product.id)">Select</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

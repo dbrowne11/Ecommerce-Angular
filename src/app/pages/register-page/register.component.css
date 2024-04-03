@@ -1,0 +1,11 @@
+.wrapper {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5px 5px #aaa;
+    background-color: #fff;
+}
+body {
+    background-color: #ccc;
+}

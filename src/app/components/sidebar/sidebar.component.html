@@ -1,0 +1,64 @@
+<div class="container-fluid divider h-100">
+    <!-- Sort -->
+    <h3>Sorting</h3>
+    <hr>
+    <div class="row">
+        <h6 >Price</h6>
+    </div>
+    <div class="d-flex flex-column align-content-center ">
+        <div class="row w-100">
+            <label for="l-h" class="col-sm-10 form-label ">Low to High</label>
+            <input class="col-sm-2 align-self-center " type="radio" 
+            name="price" id="l-h" value="Low to High" (click)="sortByPrice(true)">
+        </div>
+        
+        <div class="row w-100">
+            <label for="h-l" class="col-sm-10 form-label">High to Low</label>
+            <input class="col-sm-2 align-self-center" type="radio" 
+            name="price" id="h-l" value="High to Low" (click)="sortByPrice(false)">
+        </div>
+
+        
+    </div>
+    <br><br>
+    <h3>Filters</h3>
+    <hr>
+    <div class="row text-center">
+        <h6>Category</h6>
+        <div class="dropdown ">
+            
+            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Select
+            </button>
+
+            <!-- <div *ngFor="let category of categories">
+                <a class="dropdown-item" href="handleCategorySelect()"></a>
+            </div> -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </div>
+    </div>
+    <br>
+    <div class="row text-center">
+        <h6>Subcategory</h6>
+        <!-- <div class="dropdown ">
+            
+            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div> -->
+    </div>
+        <!-- Category -->
+
+        <!-- SubCategory -->
+</div>
+<!-- <div class="col-md-1 vr h-100"></div> -->

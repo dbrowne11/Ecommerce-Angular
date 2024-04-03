@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-center">
+                <img src="{{ product?.productImage }}" alt="" class="img-fluid">
+                <div class="text-center p-1 btn-group" *ngFor="let image of product?.productImages; index as i">
+                    <button class="btn btn-primary" (click)="setImgIndex(image)" >
+                        <small >
+                            {{i+1}}
+                        </small>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>{{ product?.productName }}</h2>
+            <p>{{ product?.category?.categoryName }}</p>
+            <p>{{ product?.productDescription }}</p>
+            <div class="text-center my-auto">
+                <h1 ngModel>{{ product?.price | currency}}</h1>
+                <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,13 @@
+img {
+    max-height: 67%;
+
+}
+.card {
+    max-height: 100%;
+    background-color: #eee;
+}
+.card-img-top {
+
+    /*min-width: max-content;*/
+    object-fit: cover; 
+}
